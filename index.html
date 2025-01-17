@@ -39,23 +39,34 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-16 bg-gray-800">
+<section id="about" class="py-16 bg-gray-800">
     <div class="max-w-4xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-yellow-400 text-center uppercase">About Me</h2>
       <div class="mt-8 flex flex-col md:flex-row items-center md:space-x-8">
-        <img src="profile.jpg" alt="Profile" class="w-40 h-40 rounded-full">
+        <!-- Profile Picture Section -->
+        <div class="flex items-center justify-center w-48 h-48 bg-gray-700 rounded-lg overflow-hidden">
+          <img src="profile.jpg" alt="Profile" class="object-cover w-full h-full">
+        </div>
+        <!-- Information Section -->
         <div class="mt-6 md:mt-0 text-center md:text-left">
-          <h3 class="text-2xl font-bold">Hi There! I'm Edward Davis</h3>
+          <h3 class="text-2xl font-bold">Hi There! I'm August Musande</h3>
           <p class="text-sm mt-2">I am a visual designer with a strong focus on branding. I create designs that inspire.</p>
-          <div class="mt-4">
-            <p>Birthday: <span>May 07, 1989</span></p>
-            <p>Email: <span>edward@example.com</span></p>
-            <p>Freelance: <span>Available</span></p>
+          <div class="mt-4 space-y-2">
+            <p>Birthday: <span class="text-yellow-400">July 17, 2004</span></p>
+            <p>Email: <span class="text-yellow-400">augustmusande@gmail.com</span></p>
+            <p>Freelance: <span class="text-yellow-400">Available</span></p>
+          </div>
+          <!-- Download Button -->
+          <div class="mt-6">
+            <a href="cv.pdf" download class="px-6 py-2 bg-yellow-400 text-gray-900 font-bold rounded-lg shadow-lg hover:bg-yellow-500">
+              Download My CV
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
+  
 
   <!-- Services Section -->
   <section id="services" class="py-16 bg-gray-900">
