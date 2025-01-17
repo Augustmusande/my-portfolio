@@ -19,7 +19,6 @@
   </style>
 </head>
 <body class="font-sans antialiased">
-  <!-- Header -->
   <header class="w-full py-6 px-8 bg-gray-900 flex justify-between items-center">
     <h1 class="text-yellow-400 text-3xl font-bold">August</h1>
     <nav class="space-x-6 text-white">
@@ -30,7 +29,6 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
   <section class="text-center py-16 bg-cover bg-center" style="background-image: url('background.jpg');">
     <h2 class="text-4xl font-bold text-yellow-400"><span class="text-white">Hi, I am</span> August Musande</h2>
     <p class="text-xl mt-4">I am a frontend web developer. I create clean code and animations.</p>
@@ -42,16 +40,13 @@
     </div>
   </section>
 
- <!-- About Section -->
 <section id="about" class="py-16 bg-gray-800">
     <div class="max-w-4xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-yellow-400 text-center uppercase">About Me</h2>
       <div class="mt-8 flex flex-col md:flex-row items-center md:space-x-8">
-        <!-- Profile Picture Section -->
         <div class="flex items-center justify-center w-48 h-48 bg-gray-700 rounded-lg overflow-hidden">
           <img src="IMG-20241226-WA0078.jpg" alt="Profile" class="object-cover w-full h-full">
         </div>
-        <!-- Information Section -->
         <div class="mt-6 md:mt-0 text-center md:text-left">
           <h3 class="text-2xl font-bold">Hi There! I'm August Musande</h3>
           <p class="text-sm mt-2">I am a visual designer with a strong focus on branding. I create designs that inspire.</p>
@@ -63,7 +58,6 @@
             <p>Languages: <span class="text-yellow-400">English, French, Swahili</span></p>
             <p>Freelance: <span class="text-yellow-400">Available</span></p>
           </div>
-          <!-- Download Button -->
           <div class="mt-6">
             <a href="cv.pdf" download class="px-6 py-2 bg-yellow-400 text-gray-900 font-bold rounded-lg shadow-lg hover:bg-yellow-500">
               Download My CV
@@ -75,12 +69,10 @@
 </section>
 
 
- <!-- Services Section -->
 <section id="services" class="py-16 bg-gray-900">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-yellow-400 text-center "id="services">Services</h2>
       <div class="mt-8 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        <!-- Service Card 1 -->
         <div class="text-center bg-gray-800 p-6 rounded-lg">
           <div class="flex justify-center mb-4">
             <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -90,7 +82,6 @@
           <h3 class="text-xl font-bold">Sketches</h3>
           <p class="text-sm mt-2">Creating high-quality sketches for designs.</p>
         </div>
-        <!-- Service Card 2 -->
         <div class="text-center bg-gray-800 p-6 rounded-lg">
           <div class="flex justify-center mb-4">
             <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -100,7 +91,6 @@
           <h3 class="text-xl font-bold">UI/UX Design</h3>
           <p class="text-sm mt-2">Improving the user experience with elegant designs.</p>
         </div>
-        <!-- Service Card 3 -->
         <div class="text-center bg-gray-800 p-6 rounded-lg">
           <div class="flex justify-center mb-4">
             <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -110,7 +100,6 @@
           <h3 class="text-xl font-bold">Product Design</h3>
           <p class="text-sm mt-2">Innovative designs for various products.</p>
         </div>
-        <!-- Service Card 4: App Design -->
         <div class="text-center bg-gray-800 p-6 rounded-lg">
           <div class="flex justify-center mb-4">
             <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -120,7 +109,6 @@
           <h3 class="text-xl font-bold">App Design</h3>
           <p class="text-sm mt-2">Creating visually appealing and functional mobile app interfaces.</p>
         </div>
-        <!-- Service Card 5: Responsive Design -->
         <div class="text-center bg-gray-800 p-6 rounded-lg">
           <div class="flex justify-center mb-4">
             <div class="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center">
@@ -134,7 +122,6 @@
     </div>
   </section>
   
-  <!-- My Skills Section -->
 <section id="skils" class="py-16 bg-gray-900 text-white">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-3xl font-bold text-yellow-400 text-center">My Skills</h2>
@@ -165,12 +152,10 @@
   </section>
   
 
-  <!-- Footer -->
   <footer class="py-6 bg-gray-900 text-center text-gray-500">
     &copy; 2025 Portfolio. All Rights Reserved.
   </footer>
   <script>
-    // Function to animate skill bars when they appear in the viewport
 document.addEventListener("DOMContentLoaded", () => {
     const skillBars = document.querySelectorAll(".skill-bar");
   
@@ -181,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const bar = entry.target;
             const skillLevel = bar.getAttribute("data-skill");
             bar.style.width = skillLevel + "%";
-            observer.unobserve(bar); // Stop observing once the animation is triggered
+            observer.unobserve(bar); 
           }
         });
       },
