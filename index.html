@@ -21,13 +21,17 @@
 <body class="font-sans antialiased">
   <header class="w-full py-6 px-8 bg-gray-900 flex justify-between items-center">
     <h1 class="text-yellow-400 text-3xl font-bold">August</h1>
-    <nav class="space-x-6 text-white">
-      <a href="#" class="hover:text-yellow-400">Home</a>
-      <a href="#about" class="hover:text-yellow-400">About</a>
-      <a href="#services" class="hover:text-yellow-400">Services</a>
-      <a href="#skils" class="hover:text-yellow-400">My skills</a>
+    <button id="burger-menu" class="lg:hidden text-white text-3xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav id="nav-menu" class="hidden lg:flex flex-col lg:flex-row lg:space-x-6 text-white bg-gray-900 lg:bg-transparent absolute lg:static top-16 left-0 w-full lg:w-auto z-10 lg:z-auto">
+      <a href="#" class="hover:text-yellow-400 px-4 py-2 lg:px-0">Home</a>
+      <a href="#about" class="hover:text-yellow-400 px-4 py-2 lg:px-0">About</a>
+      <a href="#services" class="hover:text-yellow-400 px-4 py-2 lg:px-0">Services</a>
+      <a href="#skills" class="hover:text-yellow-400 px-4 py-2 lg:px-0">My skills</a>
     </nav>
   </header>
+  
 
   <section class="text-center py-16 bg-cover bg-center" style="background-image: url('background.jpg');">
     <h2 class="text-4xl font-bold text-yellow-400"><span class="text-white">Hi, I am</span> August Musande</h2>
@@ -177,7 +181,13 @@ document.addEventListener("DOMContentLoaded", () => {
       observer.observe(bar);
     });
   });
-  
+  const burgerMenu = document.getElementById("burger-menu");
+  const navMenu = document.getElementById("nav-menu");
+
+  burgerMenu.addEventListener("click", () => {
+    navMenu.classList.toggle("hidden"); 
+    navMenu.classList.toggle("flex"); 
+  });
   </script>
 </body>
 </html>
